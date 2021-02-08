@@ -13,5 +13,85 @@ header {
 
 .header-content {
   height: 100%;
-  vertical-align: middle;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  margin: auto 31px;
+}
+
+.pest-radar {
+  color: #0d2f48;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.58px;
+  line-height: normal;
+  text-align: left;
+}
+
+.person {
+  width: 18px;
+  height: 18px;
+}
+
+.right {
+  display: flex;
+  width: 35%;
+  margin: auto 20px auto 0;
+  justify-content: space-around;
+}
+
+.search input {
+  width: 343px;
+  height: 37px;
+  border-radius: 10px;
+  background-color: rgba(171, 171, 171, 0.1);
+  border: none;
+}
+
+.search input::placeholder {
+  color: rgba(60, 60, 67, 0.6);
+  font-family: "SF Pro Text - Regular";
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.41px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.logged-person {
+  display: flex;
+  margin: auto 0;
+}
+
+.person {
+  margin: auto 5px auto 0;
+}
+
+.person-name {
+  color: #1f3b51;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -1px;
+  line-height: normal;
+  text-align: left;
+}
+
+.log-out {
+  text-decoration: none;
+  color: #0091ff;
+  font-family: "SF Compact Display";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -1px;
+  line-height: normal;
+  text-align: left;
+  margin: auto 0;
 }
