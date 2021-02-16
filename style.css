@@ -95,3 +95,63 @@ header {
   text-align: left;
   margin: auto 0;
 }
+
+aside {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 260px;
+  background-color: #14234f;
+}
+
+.nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  list-style: none;
+}
+
+.nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "SF Pro Text - Regular";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.02px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.nav li a:hover {
+  opacity: 1;
+}
+
+.support-phone {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.support-text {
+  width: 60px;
+  height: 20px;
+  color: #ffffff;
+  font-family: "SF Pro Text";
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.38px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.support {
+  display: flex;
+  margin: 0 0 15px 20px  
+}
