@@ -1,18 +1,30 @@
+@font-face {
+  font-family: "Roboto";
+  src: 
+    url("src/fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
+    url("src/fonts/Roboto/Roboto-Medium.ttf") format("ttf"),
+    url("src/fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
+ }
+
+ body {
+   overflow: hidden;
+ }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  width: 100%;
-  height: 56px;
+  padding: 10px;
   box-shadow: 0 2px 4px rgba(50, 123, 152, 0.14);
   background-color: #f6fbff;
 }
 
-.header-content {
-  height: 100%;
+.header-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -22,10 +34,14 @@ header {
   margin: auto 31px;
 }
 
+.artboard {
+  width: 36px;
+  height: 29px;
+}
+
 .pest-radar {
   color: #0d2f48;
   font-size: 24px;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: -0.58px;
   line-height: normal;
@@ -44,23 +60,27 @@ header {
   justify-content: space-around;
 }
 
-.search input {
+#search-input {
   width: 343px;
   height: 37px;
   border-radius: 10px;
+  background: url("src/img/search.png") no-repeat 10px 12px;
   background-color: rgba(171, 171, 171, 0.1);
   border: none;
 }
 
 .search input::placeholder {
   color: rgba(60, 60, 67, 0.6);
-  font-family: "SF Pro Text - Regular";
+  padding-left: 25px;
   font-size: 17px;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: -0.41px;
   line-height: 22px;
   text-align: left;
+}
+
+#search-input:focus {
+  background-image: none;
 }
 
 .logged-person {
@@ -74,9 +94,7 @@ header {
 
 .person-name {
   color: #1f3b51;
-  font-family: "Roboto";
   font-size: 20px;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: -1px;
   line-height: normal;
@@ -86,9 +104,7 @@ header {
 .log-out {
   text-decoration: none;
   color: #0091ff;
-  font-family: "SF Compact Display";
   font-size: 20px;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: -1px;
   line-height: normal;
@@ -119,9 +135,7 @@ aside {
   height: 100%;
   opacity: 0.8;
   color: #ffffff;
-  font-family: "SF Pro Text - Regular";
   font-size: 16px;
-  font-weight: 400;
   font-style: normal;
   letter-spacing: 0.02px;
   line-height: 20px;
@@ -142,9 +156,7 @@ aside {
   width: 60px;
   height: 20px;
   color: #ffffff;
-  font-family: "SF Pro Text";
   font-size: 16px;
-  font-weight: 500;
   font-style: normal;
   letter-spacing: -0.38px;
   line-height: 20px;
@@ -153,5 +165,106 @@ aside {
 
 .support {
   display: flex;
-  margin: 0 0 15px 20px  
+  height: 20px;
+  margin-left: 20px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.table {
+  width: 100%;
+  padding: 25px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  color: #1f3b51;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.table tr {
+  height: 50px;
+}
+
+.table tr td:first-child {
+  text-align: center;
+}
+
+.table tr td:nth-child(3) {
+  width: 80px;
+  padding-right: 30px;
+}
+
+.table tr:nth-child(odd){
+  background-color: #eef4f8;
+}
+
+.tag {
+  padding: 4px 14px;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: -0.8px;
+  line-height: normal;
+  text-align: left;
+  border-radius: 2px;
+  background-color: #697c8a;
+}
+
+.active-tag {
+  background-color: #e02020;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 3px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.pages span:first-child {
+  color: #697c8a;
+  font-size: 13px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 17.6px;
+  text-align: center;
+}
+
+.pages span a {
+  text-decoration: none;
+  padding: 10px;
+  color: #697c8a;
+  font-size: 13px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 17.6px;
+  text-align: center;
+}
+
+.pages span a:hover {
+  background-color: #697c8a;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.export {
+  margin: 0 25px 10px 0;
 }
